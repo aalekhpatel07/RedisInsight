@@ -43,6 +43,9 @@ The current GA version of RedisInsight is 1.11. You can install RedisInsight 2.0
 ### Installable 
 Available to download for free from [here](https://redis.com/redis-enterprise/redis-insight/#insight-form). 
 
+### Docker
+A docker image is available at [aalekhpatel07/redisinsight:2.0](https://hub.docker.com/r/aalekhpatel07/redisinsight)
+
 ### Build 
 Alternatively you can also build from source. See our wiki for instructions.
 
