@@ -72,9 +72,6 @@ RUN yarn --cwd ./redisinsight/api install --production
 COPY redisinsight/api/.yarnclean.prod ./redisinsight/api/.yarnclean
 RUN yarn --cwd ./redisinsight/api autoclean --force
 
-COPY ./docker-entry.sh ./
-RUN chmod +x docker-entry.sh
-
 EXPOSE 5000
 
-ENTRYPOINT ["./docker-entry.sh", "node", "redisinsight/api/dist/src/main"]
+ENTRYPOINT ["node", "redisinsight/api/dist/src/main"]
